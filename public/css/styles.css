@@ -218,5 +218,6 @@ footer div p, footer p {
     .footer {
         display: flex;
         flex-direction: row;
+        gap: 2rem;
     }
 }
