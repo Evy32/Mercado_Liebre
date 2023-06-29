@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+label { 
+    color: #666;
+}
+#nombre, #apellido, #usuario, #fecha, #domicilio, #contraseña, #confirmacion {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+    color: #666;
+}
+#nombre:focus, #apellido:focus, #usuario:focus, #fecha:focus, #domicilio:focus, #contraseña:focus, #confirmacion:focus {
+    outline: none;
+}
+.perfiles {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.categorias {
+    padding: 10px;
+}
+#foto {
+    padding: 10px;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#enviar, .enviar{
+    background-color: #39b54ab8;
+    text-decoration: none;
+    font-size: 13.33px;
+    text-align: center;
+}
+#borrar {
+    background-color: #1259c3b8;
+}
+.enviar {
+    display: flex;
+    background-color: #1259c3;
+    align-self: center;
+    justify-content: center;
+}
+#enviar, #borrar, .enviar {
+    color: white;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+.enviar:hover {
+    background-color: #0022AA;
+}
+#enviar:hover{
+    background-color: #39b54a;
+} 
+#borrar:hover {
+    background-color: #1259c3;
+}
+@media (min-width: 361px){
+    .perfiles{ 
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .formulario {
+        padding: 5vh 8vw;
+    }
+}
