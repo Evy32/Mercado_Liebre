@@ -79,3 +79,10 @@ label {
         padding: 5vh 8vw;
     }
 }
+@media (min-width: 768px){
+    .footer {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
